@@ -1,48 +1,48 @@
 
 
 import UfButton from '../packages/button/index.js'
-import UfButtonGroup from '@/components/common/UfButtonGroup'
-import UfDrawer from '@/components/common/UfDrawer'
-import UfLoading from '@/components/common/UfLoading'
-import UfModal from '@/components/common/UfModal'
-import UfLocalLoading from '@/components/common/UfLocalLoading'
-import UfMoreBtn from '@/components/common/UfMoreBtn'
-import UfPager from '@/components/common/UfPager'
-import UfQueryArea from '@/components/common/UfQueryArea'
-import UfTab from '@/components/common/UfTab'
-import UfTreeSelect from '@/components/common/UfTreeSelect'
-import UfAcctSelect from '@/components/common/UfAcctSelect'
-import UfAgencySelect from '@/components/common/UfAgencySelect'
-import Ztree from '@/components/common/Ztree'
-import UfHeader from '@/components/common/UfHeader'
-import UfSubTitle from '@/components/common/UfSubTitle'
+// import UfButtonGroup from '@/components/common/UfButtonGroup'
+// import UfDrawer from '@/components/common/UfDrawer'
+// import UfLoading from '@/components/common/UfLoading'
+// import UfModal from '@/components/common/UfModal'
+// import UfLocalLoading from '@/components/common/UfLocalLoading'
+// import UfMoreBtn from '@/components/common/UfMoreBtn'
+// import UfPager from '@/components/common/UfPager'
+// import UfQueryArea from '@/components/common/UfQueryArea'
+// import UfTab from '@/components/common/UfTab'
+// import UfTreeSelect from '@/components/common/UfTreeSelect'
+// import UfAcctSelect from '@/components/common/UfAcctSelect'
+// import UfAgencySelect from '@/components/common/UfAgencySelect'
+// import Ztree from '@/components/common/Ztree'
+// import UfHeader from '@/components/common/UfHeader'
+// import UfSubTitle from '@/components/common/UfSubTitle'
 
 const components = [
   UfButton
 ]
 
-const install = function(Vue, opts = {}) {
+const install = function(Vue) {
 
 
   components.forEach(component => {
     Vue.component(component.name, component);
   });
 
-  Vue.use(InfiniteScroll);
-  Vue.use(Loading.directive);
+  // Vue.use(InfiniteScroll);
+  // Vue.use(Loading.directive);
 
-  Vue.prototype.$ELEMENT = {
-    size: opts.size || '',
-    zIndex: opts.zIndex || 2000
-  };
+  // Vue.prototype.$ELEMENT = {
+  //   size: opts.size || '',
+  //   zIndex: opts.zIndex || 2000
+  // };
 
-  Vue.prototype.$loading = Loading.service;
-  Vue.prototype.$msgbox = MessageBox;
-  Vue.prototype.$alert = MessageBox.alert;
-  Vue.prototype.$confirm = MessageBox.confirm;
-  Vue.prototype.$prompt = MessageBox.prompt;
-  Vue.prototype.$notify = Notification;
-  Vue.prototype.$message = Message;
+  // Vue.prototype.$loading = Loading.service;
+  // Vue.prototype.$msgbox = MessageBox;
+  // Vue.prototype.$alert = MessageBox.alert;
+  // Vue.prototype.$confirm = MessageBox.confirm;
+  // Vue.prototype.$prompt = MessageBox.prompt;
+  // Vue.prototype.$notify = Notification;
+  // Vue.prototype.$message = Message;
 
 };
 
